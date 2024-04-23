@@ -1,0 +1,63 @@
+Which of the following is NOT a primary function of an operating system?
+a) Memory management
+b) File management
+c) Device management
+d) Network management
+
+Which scheduling algorithm provides equal priority to each process and allows them to execute in a round-robin fashion?
+a) First-Come, First-Served (FCFS)
+b) Shortest Job Next (SJN)
+c) Round Robin (RR)
+d) Priority scheduling
+
+What is the purpose of a page replacement algorithm in virtual memory management?
+a) To allocate physical memory to processes
+b) To manage input/output operations
+c) To minimize the number of page faults
+d) To enforce memory protection between processes
+
+Which synchronization primitive allows multiple threads to access a shared resource simultaneously?
+a) Mutex
+b) Semaphore
+c) Monitor
+d) Barrier
+
+Which of the following is an example of a file system used in Linux operating systems?
+a) NTFS
+b) FAT32
+c) HFS+
+d) Ext4
+
+What is the purpose of a deadlock in an operating system?
+a) To optimize memory allocation
+b) To prevent unauthorized access to system resources
+c) To ensure fairness in process scheduling
+d) To cause a situation where processes are unable to proceed
+
+Which process scheduling algorithm assigns priority to each process based on their characteristics and dynamically adjusts priorities as per the requirements?
+a) First-Come, First-Served (FCFS)
+b) Shortest Job Next (SJN)
+c) Round Robin (RR)
+d) Multilevel Queue Scheduling
+
+Which memory management scheme allows the operating system to move processes into and out of main memory to maximize the utilization of available memory?
+a) Paging
+b) Segmentation
+c) Virtual memory
+d) Swapping
+
+Which system call is used to create a new process in an operating system?
+a) fork()
+b) exec()
+c) wait()
+d) exit()
+
+What is the purpose of a shell in an operating system?
+a) To manage hardware resources
+b) To execute system calls
+c) To provide a command-line interface for user interaction
+d) To handle device drivers
+
+
+
+

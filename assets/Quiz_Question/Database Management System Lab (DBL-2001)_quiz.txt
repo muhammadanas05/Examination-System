@@ -1,0 +1,69 @@
+Which of the following is NOT a type of database model?
+a) Relational model
+b) Object-oriented model
+c) Hierarchical model
+d) Procedural model
+
+In a relational database, a table is also known as:
+a) Entity
+b) Tuple
+c) Attribute
+d) Relation
+
+Which of the following is a key characteristic of a database management system (DBMS)?
+a) Data redundancy
+b) Data independence
+c) Data normalization
+d) Data duplication
+
+Which normal form eliminates redundancy by ensuring that each attribute in a table is functionally dependent on the primary key?
+a) First normal form (1NF)
+b) Second normal form (2NF)
+c) Third normal form (3NF)
+d) Boyce-Codd normal form (BCNF)
+
+Which type of join returns only the rows that have matching values in both tables being joined?
+a) Inner join
+b) Outer join
+c) Cross join
+d) Self join
+
+Which SQL command is used to insert new data into a database table?
+a) SELECT
+b) UPDATE
+c) INSERT
+d) DELETE
+
+Which of the following is NOT a data manipulation language (DML) statement in SQL?
+a) SELECT
+b) INSERT
+c) UPDATE
+d) DEFINE
+
+Which of the following database integrity constraints ensures that a column or set of columns must have a value?
+a) Primary key constraint
+b) Foreign key constraint
+c) Unique constraint
+d) NOT NULL constraint
+
+Which of the following is used to define the structure of a database, including tables, relationships, and constraints?
+a) Data Definition Language (DDL)
+b) Data Manipulation Language (DML)
+c) Data Control Language (DCL)
+d) Data Query Language (DQL)
+
+Which of the following is a technique used to improve database performance by grouping related data together on disk?
+a) Indexing
+b) Partitioning
+c) Clustering
+d) Replication
+
+In a relational database, a table is also known as:
+a) Entity
+b) Tuple
+c) Attribute
+d) Relation
+
+
+
+

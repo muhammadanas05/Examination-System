@@ -1,0 +1,59 @@
+Which of the following is NOT a primary function of an operating system?
+a) Process management
+b) Memory management
+c) File system management
+d) Network protocol design
+
+What is the role of a scheduler in an operating system?
+a) To allocate system resources to different processes
+b) To manage the file system and data storage
+c) To handle user input and output operations
+d) To maintain the security and integrity of the system
+
+Which of the following scheduling algorithms provides fairness by assigning equal time slices to each process in a round-robin fashion?
+a) Shortest Job Next (SJN)
+b) First-Come, First-Served (FCFS)
+c) Priority-based scheduling
+d) Round-Robin scheduling
+
+What is the purpose of virtual memory in an operating system?
+a) To provide secure access to remote servers
+b) To allocate CPU time to different processes
+c) To allow efficient sharing of system resources
+d) To extend the available memory beyond physical limits
+
+Which of the following is an example of a mutual exclusion algorithm used in process synchronization?
+a) Readers-Writers problem
+b) Producer-Consumer problem
+c) Dining Philosophers problem
+d) Dekker's algorithm
+
+What is the main advantage of using multithreading in an operating system?
+a) Improved security and system integrity
+b) Better utilization of CPU resources
+c) Reduced disk space and memory usage
+d) Faster network communication
+
+Which file system structure organizes data into a hierarchy of directories and files?
+a) FAT (File Allocation Table)
+b) NTFS (New Technology File System)
+c) Ext4 (Fourth Extended File System)
+d) HFS+ (Hierarchical File System Plus)
+
+What is the purpose of a device driver in an operating system?
+a) To manage the execution of user applications
+b) To provide a graphical user interface (GUI)
+c) To establish network connections and protocols
+d) To facilitate communication with hardware devices
+
+Which of the following is a key feature of a real-time operating system (RTOS)?
+a) Support for multiuser environments
+b) Ability to schedule processes dynamically
+c) Predictable and deterministic response times
+d) Extensive file system management capabilities
+
+What is the purpose of deadlock detection in an operating system?
+a) To prevent unauthorized access to system resources
+b) To optimize memory allocation for running processes
+c) To resolve conflicts between multiple processes
+d) To identify and recover from resource allocation deadlocks

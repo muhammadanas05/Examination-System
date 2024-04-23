@@ -1,0 +1,70 @@
+1. Which of the following is NOT a fundamental principle of software design?
+a) Modularity
+b) Encapsulation
+c) Inheritance
+d) Abstraction
+
+2. What is the purpose of the SOLID principles in software design?
+a) To ensure efficient resource utilization
+b) To improve maintainability and extensibility
+c) To minimize memory consumption
+d) To enforce strong typing
+
+3. Which architectural style is characterized by dividing a system into smaller, independent components that communicate through well-defined interfaces?
+a) Client-server architecture
+b) Peer-to-peer architecture
+c) Microservices architecture
+d) Monolithic architecture
+
+4. Which design pattern is used to provide a simple interface for interacting with a complex subsystem?
+a) Singleton pattern
+b) Adapter pattern
+c) Factory pattern
+d) Observer pattern
+
+5. In object-oriented design, what does the Liskov Substitution Principle state?
+a) Objects of a superclass should be able to be replaced with objects of its subclass without altering the correctness of the program.
+b) The behavior of an object can change at runtime depending on its internal state.
+c) Objects should be able to communicate with each other through well-defined interfaces.
+d) A class should have only one reason to change.
+
+6. Which of the following is an architectural pattern commonly used for building web applications?
+a) Model-View-Controller (MVC)
+b) Observer pattern
+c) Builder pattern
+d) Decorator pattern
+
+7.What is the purpose of the Dependency Inversion Principle in software design?
+a) To ensure that a class has only one responsibility
+b) To ensure that high-level modules are not dependent on low-level modules
+c) To minimize coupling between classes and promote modularity
+d) To encapsulate related operations into a single object
+
+8. Which design pattern is used to define a family of algorithms and make them interchangeable without changing the clients that use them?
+a) Strategy pattern
+b) Prototype pattern
+c) Command pattern
+d) Visitor pattern
+
+9. Which architectural style is based on the concept of organizing a system as a set of loosely coupled, autonomous services?
+a) Service-Oriented Architecture (SOA)
+b) Event-Driven Architecture (EDA)
+c) Layered Architecture
+d) Component-Based Architecture
+
+10. What is the purpose of the GRASP (General Responsibility Assignment Software Patterns) principles in software design?
+a) To define the structure and organization of the software system
+b) To guide the assignment of responsibilities to classes and objects
+c) To optimize the performance of the software system
+d) To enforce coding standards and best practices
+
+What is the purpose of the GRASP (General Responsibility Assignment Software Patterns) principles in software design?
+a) To define the structure and organization of the software system
+b) To guide the assignment of responsibilities to classes and objects
+c) To optimize the performance of the software system
+d) To enforce coding standards and best practices
+
+
+
+
+

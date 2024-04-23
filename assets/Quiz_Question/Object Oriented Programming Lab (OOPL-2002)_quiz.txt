@@ -1,0 +1,83 @@
+Course Name: Object Oriented Programming Lab (OOPL-2002)
+No. of Questions: 10
+Marks per Question: 1
+Date & Time: Wed Jun 21 16:39:00 PKT 2023
+Question: 
+In Java, which keyword is used to create an object of a class?
+a) new
+b) create
+c) instantiate
+d) object
+
+What is the process of combining data and methods into a single unit called?
+a) Abstraction
+b) Encapsulation
+c) Inheritance
+d) Polymorphism
+
+Which principle of object-oriented programming promotes code reusability by allowing a class to inherit properties and behaviors from another class?
+a) Encapsulation
+b) Inheritance
+c) Polymorphism
+d) Abstraction
+
+Which of the following is NOT a valid access modifier in Java?
+a) public
+b) protected
+c) private
+d) internal
+
+Which keyword is used to implement method overriding in Java?
+a) extend
+b) override
+c) super
+d) @Override
+
+What is the purpose of the "this" keyword in Java?
+a) It refers to the current instance of a class.
+b) It refers to the parent class in inheritance.
+c) It refers to the child class in inheritance.
+d) It refers to the superclass of a class.
+
+What is the output of the following code snippet?
+
+java
+Copy code
+class MyClass {
+  public void display() {
+    System.out.println("Hello, World!");
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    MyClass obj = new MyClass();
+    obj.display();
+  }
+}
+a) Hello, World!
+b) Error: Class not found
+c) Compilation error
+d) Runtime exception
+
+Which of the following is an example of method overloading in Java?
+a) Declaring two methods with the same name but different return types.
+b) Declaring two methods with the same name and same number of parameters but different parameter types.
+c) Declaring two methods with the same name and same parameter types but different access modifiers.
+d) Declaring two methods with the same name and same parameter types but different method names.
+
+What is the default value assigned to an instance variable (non-static) of type int in Java if it is not explicitly initialized?
+a) 0
+b) 1
+c) -1
+d) null
+
+What is the purpose of the "super" keyword in Java?
+a) It refers to the current instance of a class.
+b) It refers to the parent class in inheritance.
+c) It refers to the child class in inheritance.
+d) It refers to the superclass of a class.
+
+
+
+
