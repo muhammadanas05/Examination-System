@@ -2,10 +2,13 @@ import java.io.*;
 import java.util.*;
 
 public class Comparator {
-    public static String username;
+    public String username;
+    public int RealCorrectCount;
+    Map<String, String> userAnswers = new HashMap<>();
+
 
     public Comparator(String username) {
-        Comparator.username = username;
+        this.username = username;
         String questionsFile = "students/" + username + ".csv";
         String answerKeyFile = "answerkey.csv";
 
@@ -19,21 +22,49 @@ public class Comparator {
         writeResultToCSV(userAnswers);
     }
 
-//    public static void main(String[] args) {
-//        Comparator comp = new Comparator("ANAS");
+    public void checkAnswers(String username) {
+        this.username = username;
+        String questionsFile = "students/" + username + ".csv";
+        String answerKeyFile = "answerkey.csv";
 
-        // String questionsFile = "students/" + username + ".csv";
-        // String answerKeyFile = "answerkey.csv";
+        Map<String, String> questionAnswers = readCSVFile(questionsFile);
+        Map<String, String> answerKey = readCSVFile(answerKeyFile);
 
-        // Map<String, String> questionAnswers = readCSVFile(questionsFile);
-        // Map<String, String> answerKey = readCSVFile(answerKeyFile);
+        Map<String, String> userAnswers = new HashMap<>();
+        userAnswers.put("username", username); // Replace with the actual username
 
-        // Map<String, String> userAnswers = new HashMap<>();
-        // userAnswers.put("username", username); // Replace with the actual username
+        compareAnswers(questionAnswers, answerKey, userAnswers);
+    }
 
-        // compareAnswers(questionAnswers, answerKey, userAnswers);
-        // writeResultToCSV(userAnswers);
-//    }
+    public void checkAnswersAndSave(String username) {
+        checkAnswers(username);
+        writeResultToCSV(userAnswers);
+
+    }
+
+    public int returnAnswer() {
+        System.out.println("return fuction -- start");
+        checkAnswers(username);
+        System.out.println("return function -- CORRECT ANSWERS: " + RealCorrectCount);
+        return RealCorrectCount;
+
+    }
+    // public static void main(String[] args) {
+    // System.out.println("RUNNING FROM MAIN");
+    // Comparator comp = new Comparator("Talha");
+    // System.out.println("Object Created -- MAIN");
+    // String questionsFile = "students/" + username + ".csv";
+    // String answerKeyFile = "answerkey.csv";
+
+    // Map<String, String> questionAnswers = readCSVFile(questionsFile);
+    // Map<String, String> answerKey = readCSVFile(answerKeyFile);
+
+    // Map<String, String> userAnswers = new HashMap<>();
+    // userAnswers.put("username", username); // Replace with the actual username
+
+    // compareAnswers(questionAnswers, answerKey, userAnswers);
+    // // writeResultToCSV(userAnswers);
+    // }
 
     private static Map<String, String> readCSVFile(String filePath) {
         Map<String, String> data = new HashMap<>();
@@ -53,14 +84,16 @@ public class Comparator {
         return data;
     }
 
-    private static void compareAnswers(Map<String, String> questionAnswers, Map<String, String> answerKey,
-                                       Map<String, String> userAnswers) {
+    private void compareAnswers(Map<String, String> questionAnswers, Map<String, String> answerKey,
+            Map<String, String> userAnswers) {
         int correctCount = 0;
         for (String question : questionAnswers.keySet()) {
             String userAnswer = questionAnswers.get(question);
             String correctAnswer = answerKey.get(question);
+            System.out.println("DEBUG: " + correctAnswer + " " + userAnswer);
             if (correctAnswer != null) {
                 boolean isCorrect = userAnswer.equalsIgnoreCase(correctAnswer);
+                System.out.println("Check Ran " + correctCount);
                 userAnswers.put(question, isCorrect ? "Correct" : "Incorrect");
                 if (isCorrect) {
                     correctCount++;
@@ -70,13 +103,17 @@ public class Comparator {
             }
         }
         int totalQuestions = questionAnswers.size();
+        RealCorrectCount = correctCount;
+        System.out.println("CORRECT ANSWERS: " + correctCount);
         userAnswers.put("Result", correctCount + "/" + totalQuestions);
     }
 
     private static void writeResultToCSV(Map<String, String> userAnswers) {
+        System.out.println("Comparator -- Writing to CSV");
         String resultFile = "result.csv";
         String username = userAnswers.get("username");
         try (PrintWriter writer = new PrintWriter(new FileWriter(resultFile, true))) {
+            System.out.println("Comparator -- Filling Data");
             if (!isUsernameExist(resultFile, username)) {
                 StringBuilder sb = new StringBuilder();
                 sb.append(username);
